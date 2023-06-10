@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+        <div class="container">
+            <div id="egyik_szam"></div>
+            <div id="plusz"></div>
+            <div id="masik_szam"></div>
+            <div id="egyenlosegjel"></div>
+            <div id="eredmeny"></div>
+        </div>
+        <div class="szamos_gombok">
+            <button id="egy" value="1">1</button>
+            <button id="ketto" value="2">2</button>
+            <button id="harom" value="3">3</button>
+            <button id="negy" value="4">4</button>
+            <button id="ot" value="5">5</button>
+            <button id="hat" value="6">6</button>
+            <button id="het" value="7">7</button>
+            <button id="nyolc" value="8">8</button>
+            <button id="kilenc" value="9">9</button>
+            <button id="osszead" onclick="osszead()">+</button>
+            <button id="nulla" value="0">0</button>
+            <button id="egyenlo" onclick="kiir()">=</button>
+            <button id="kivon" onclick="kivon()">-</button>
+            <button id="szoroz" onclick="szoroz()">*</button>
+            <button id="oszt" onclick="oszt()">/</button>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+</html>

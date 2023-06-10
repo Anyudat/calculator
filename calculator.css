@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    height: 20px;
+    border: solid 1px;
+}
+
+.szamos_gombok {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    height: 200px;
+}
+
+#calculator {
+    width: 20%;
+    margin: 20% auto auto auto;
+    border: solid blue 3px;
+}
+
+body {
+    background-color: cadetblue;
+    height: 100%;
+}
