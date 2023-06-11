@@ -68,7 +68,7 @@ function kiir() {
         document.getElementById("eredmeny").innerHTML = egyik_szam / masik_szam;
     }
     if (hatvanyozas == true) {
-        document.getElementById("eredmeny").innerHTML = egyik_szam ** masik_szam;
+        document.getElementById("eredmeny").innerHTML = Math.pow(egyik_szam, masik_szam);
     }
     if (gyokvonas == true) {
         document.getElementById("eredmeny").innerHTML =  Math.sqrt(masik_szam);
