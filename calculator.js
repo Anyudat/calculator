@@ -70,7 +70,10 @@ function kiir() {
     if (hatvanyozas == true) {
         document.getElementById("eredmeny").innerHTML = egyik_szam ** masik_szam;
     }
-    if (hatvanyozas == false && szorzas == false && osztas == false && kivonas == false && osszeadas == false) {
+    if (gyokvonas == true) {
+        document.getElementById("eredmeny").innerHTML =  Math.sqrt(masik_szam);
+    }
+    if (gyokvonas == false && hatvanyozas == false && szorzas == false && osztas == false && kivonas == false && osszeadas == false) {
         document.getElementById("eredmeny").innerHTML = egyik_szam;
     }
 }
@@ -141,5 +144,15 @@ function hatvany() {
     egyik.splice(0, egyik.length);
     elso_szam = false;
     document.getElementById("plusz").innerHTML = "(^)"
+    elso_jegy = true;
+}
+
+function gyok() {
+    gyokvonas = true;
+    anyad.call();
+    lista.splice(0, lista.length);
+    egyik.splice(0, egyik.length);
+    elso_szam = false;
+    document.getElementById("plusz").innerHTML = "√"
     elso_jegy = true;
 }
