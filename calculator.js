@@ -8,6 +8,7 @@ let osztas = false;
 let kivonas = false;
 let szorzas = false;
 let hatvanyozas = false;
+let gyokvonas = false;
 let elso_jegy = true;
 
 document.querySelectorAll('button').forEach(button => {
@@ -73,9 +74,6 @@ function kiir() {
     if (gyokvonas == true) {
         document.getElementById("eredmeny").innerHTML =  Math.sqrt(masik_szam);
     }
-    if (gyokvonas == false && hatvanyozas == false && szorzas == false && osztas == false && kivonas == false && osszeadas == false) {
-        document.getElementById("eredmeny").innerHTML = egyik_szam;
-    }
 }
 
 function clears() {
@@ -90,6 +88,7 @@ function clears() {
     kivonas = false;
     szorzas = false;
     hatvanyozas = false;
+    gyokvonas = false;
     elso_jegy = true;
     document.getElementById("plusz").innerHTML = "";
     document.getElementById("egyenlosegjel").innerHTML = "";
